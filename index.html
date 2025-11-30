@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Veera Reddy S — Portfolio</title>
+  <meta name="description" content="Portfolio — Veera Reddy S | Developer, Engineer, Maker" />
+
+  <!-- Simple styling (self-contained) -->
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa6bd; --accent:#7dd3fc; --accent-2:#60a5fa;
+      --glass: rgba(255,255,255,0.03);
+      --shadow: 0 6px 20px rgba(2,6,23,0.6);
+      --radius: 14px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:linear-gradient(180deg,#041025 0%, #071428 100%);color:#e6eef8;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+
+    .container{max-width:1100px;margin:40px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;font-weight:700;color:#032940}
+    h1{font-size:20px;margin:0}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px}
+    nav a:hover{color:var(--accent)}
+
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;margin-top:28px}
+    .card{background:var(--card);padding:20px;border-radius:var(--radius);box-shadow:var(--shadow);}
+
+    .intro h2{margin:0 0 6px 0;font-size:28px}
+    .intro p{color:var(--muted);line-height:1.5}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .skill{background:var(--glass);padding:8px 12px;border-radius:999px;color:var(--muted);font-size:13px}
+
+    .contact-card{display:flex;flex-direction:column;gap:14px;align-items:stretch}
+    .photo{height:200px;border-radius:10px;background:linear-gradient(135deg,#123 0%, #245 100%);display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--accent)}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#032940;text-decoration:none;font-weight:600;text-align:center}
+
+    .projects{margin-top:26px;display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .project{display:flex;flex-direction:column;gap:10px}
+    .project h3{margin:0;font-size:16px}
+    .project p{margin:0;color:var(--muted);font-size:13px}
+    .project .tags{display:flex;gap:8px;flex-wrap:wrap}
+
+    footer{margin-top:28px;color:var(--muted);text-align:center;padding:24px}
+
+    /* responsive */
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr}
+      .projects{grid-template-columns:1fr}
+      .container{margin:20px}
+    }
+
+    /* small utility */
+    .row{display:flex;gap:12px;align-items:center}
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header style="flex-direction:column; text-align:center; gap:16px;">
+  <div class="photo" style="width:130px; height:130px; border-radius:50%; overflow:hidden; margin-bottom:6px;">
+    <img src="Reddy.jpg" alt="Veera Reddy S" style="width:100%; height:100%; object-fit:cover;" />
+  </div>
+  <div class="brand" style="flex-direction:column; text-align:center;">
+    <h1 style="font-size:24px; margin:0;">Veera Reddy S</h1>
+    <div class="muted">ECE 7th Sem • Bellari Institute of Technology and Management<br>USN: 3BR22EC185 • Roll No: 61<br>Role: Hardware Builder (Focuses on the physical assembly, wiring, and sensors.)</div>
+  </div>
+  <nav style="margin-top:10px;">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="https://github.com/" target="_blank">GitHub</a>
+  </nav>
+</header>
+
+    <section class="hero">
+      <div class="card intro">
+        <h2>Hello — I'm <span style="color:var(--accent)">Veera Reddy S</span></h2>
+        <p>I build embedded systems, robotics, and IoT projects. I enjoy turning hardware ideas into working prototypes and clean web demos. Below you'll find selected projects, contact info, and links to code.</p>
+
+        <div class="skills">
+  <div class="skill">Arduino/esp 32</div>
+</div>
+          
+
+        <div style="margin-top:16px">
+          <a class="btn" href="#projects">See projects</a>
+        </div>
+
+        <div class="projects" id="projects" style="grid-template-columns:1fr;">
+  <div class="project card" style="padding:24px;">
+    <h2 style="margin:0; font-size:24px; color:var(--accent); font-weight:700;">SMART ARDUINO VOICE CONTROLLED ROVER</h2>
+    <p class="muted" style="margin-top:6px; font-size:15px;">A hardware–focused robotics project integrating voice commands, obstacle detection, and intelligent navigation.</p>
+
+    <hr style="border:0; border-top:1px solid #1d2738; margin:18px 0;" />
+
+    <h3 style="margin:0 0 8px 0; font-size:17px; color:var(--accent-2);">📌 Components Used</h3>
+    <ul class="muted" style="line-height:1.65; font-size:14px; margin-left:16px;">
+      <li>Car Chassis Module</li>
+      <li>4 × Gear Motors</li>
+      <li>Motor Driver Module (L298N)</li>
+      <li>Arduino UNO</li>
+      <li>Bluetooth Module (HC-05)</li>
+      <li>Ultrasonic Sensor</li>
+      <li>Servo Motor</li>
+      <li>Battery & Wiring</li>
+    </ul>
+
+    <hr style="border:0; border-top:1px solid #1d2738; margin:18px 0;" />
+
+    <h3 style="margin:0 0 8px 0; font-size:17px; color:var(--accent-2);">🚀 Project Overview</h3>
+    <p class="muted" style="line-height:1.7; font-size:14px;">
+      The Smart Arduino Voice Controlled Rover responds to voice commands received through a Bluetooth module. It features obstacle detection using an ultrasonic sensor paired with a servo motor to scan left and right for safer navigation. The rover supports voice mode, manual control, and autonomous decision-making.
+    </p>
+
+    <hr style="border:0; border-top:1px solid #1d2738; margin:18px 0;" />
+
+    <h3 style="margin:0 0 8px 0; font-size:17px; color:var(--accent-2);">👨‍🔧 My Role — Hardware Builder</h3>
+    <p class="muted" style="line-height:1.7; font-size:14px;">
+      I handled all physical construction and wiring of the rover. Responsibilities included:
+    </p>
+    <ul class="muted" style="line-height:1.6; font-size:14px; margin-left:16px;">
+      <li>Mounting chassis and installing all motors.</li>
+      <li>Wiring motor driver with Arduino UNO.</li>
+      <li>Integrating ultrasonic sensor + servo system.</li>
+      <li>Managing power connections and cable routing.</li>
+      <li>Hardware testing and validation.</li>
+    </ul>
+
+    <hr style="border:0; border-top:1px solid #1d2738; margin:18px 0;" />
+
+    <h3 style="margin:0 0 8px 0; font-size:17px; color:var(--accent-2);">✨ Key Features</h3>
+    <ul class="muted" style="line-height:1.65; font-size:14px; margin-left:16px;">
+      <li>Bluetooth voice command movement.</li>
+      <li>Automatic obstacle override system.</li>
+      <li>Servo-based directional scanning.</li>
+      <li>Three modes: Voice, Manual, Autonomous.</li>
+    </ul>
+
+    <p class="muted" style="margin-top:16px; font-size:14px; font-weight:600;">USN: 3BR22EC185 • Roll No: 61</p>
+  </div>
+</div>
+</div>
+</div>
+          </div>
+
+          <!-- Add more projects: edit HTML to include your own descriptions -->
+        </div>
+      </div>
+
+      <aside class="card contact-card" id="contact">
+        <div class="photo"><img src="Reddy.jpg" alt="Veera Reddy S" style="width:100%; height:100%; object-fit:cover; border-radius:10px;" /></div>
+        <div>
+          <strong>Email</strong>
+          <div class="muted">your.email@example.com</div>
+        </div>
+        <div>
+          <strong>Location</strong>
+          <div class="muted">Bellary Institute of Technology and Management<br>USN: 3BR22EC185<br>Roll No: 61</div>
+        </div>
+        <div class="row">
+          <a class="btn" href="mailto:saiveerareddy6gmail.com">Email me</a>
+          <a class="btn" href="https://github.com/saiveerareddy" target="_blank">View GitHub</a>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      <div class="muted">© <span id="year"></span> Veera Reddy S — Built with HTML & a little CSS</div>
+    </footer>
+  </div>
+
+  <script>
+    // small interactive touches
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Example: keyboard shortcuts to navigate (useful while demoing)
+    document.addEventListener('keydown', (e)=>{
+      if(e.key === '1') location.href = '#about';
+      if(e.key === '2') location.href = '#projects';
+      if(e.key === '3') location.href = '#contact';
+    });
+  </script>
+</body>
+</html>
